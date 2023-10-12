@@ -1,31 +1,21 @@
-// import { Route, Routes } from 'react-router-dom';
-// import SharedLayout from './components/SharedLayout/SharedLayout';
-// import FirstPage from './pages/FirstPage/FirstPage';
-// import SecondPage from './pages/SecondPage/SecondPage';
-// import HalfPage from './pages/HalfPage/HalfPage';
-// import ErrorPage from './pages/ErrorPage/ErrorPage';
-// import { AppWrapper } from './App.styled';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { lazy } from 'react';
+import SharedLayout from './components/SharedLayout/SharedLayout';
 
-import Tweets from "./components/Tweets/Tweets";
-
-// const test = import.meta.env.VITE_API_TEST;
+const Home = lazy(() => import('./pages/HomePage/HomePage'));
+const Tweets = lazy(() => import('./pages/TweetsPage/TweetsPage'));
 
 function App() {
- 
   return (
-    <Tweets/>
-    // <AppWrapper>
-      // <Routes>
-      //   <Route path="/" element={<SharedLayout />}>
-      //     <Route path="/first" element={<FirstPage />} />
-      //     <Route path="/second" element={<SecondPage />}>
-      //       <Route path=":half" element={<HalfPage />} />
-      //     </Route>
-
-      //     <Route path="*" element={<ErrorPage />} />
-      //   </Route>
-      // </Routes>
-    // </AppWrapper>
+    <>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/tweets" element={<Tweets />} />
+        </Route>
+        <Route path="*" element={<Navigate to={'/'} replace />} />
+      </Routes>
+    </>
   );
 }
 export default App;

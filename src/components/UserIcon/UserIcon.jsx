@@ -3,11 +3,11 @@ export default function UserIcon() {
     return (
         <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 89" fill="none">
   <g filter="url(#filter0_dii_832_56)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M45 71.1111C62.1822 71.1111 76.1111 57.1822 76.1111 40C76.1111 22.8178 62.1822 8.88889 45 8.88889C27.8178 8.88889 13.8889 22.8178 13.8889 40C13.8889 57.1822 27.8178 71.1111 45 71.1111ZM45 80C67.0914 80 85 62.0914 85 40C85 17.9086 67.0914 0 45 0C22.9086 0 5 17.9086 5 40C5 62.0914 22.9086 80 45 80Z" fill="#EBD8FF"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M45 71.1111C62.1822 71.1111 76.1111 57.1822 76.1111 40C76.1111 22.8178 62.1822 8.88889 45 8.88889C27.8178 8.88889 13.8889 22.8178 13.8889 40C13.8889 57.1822 27.8178 71.1111 45 71.1111ZM45 80C67.0914 80 85 62.0914 85 40C85 17.9086 67.0914 0 45 0C22.9086 0 5 17.9086 5 40C5 62.0914 22.9086 80 45 80Z" fill="#EBD8FF"/>
   </g>
   <defs>
-    <filter id="filter0_dii_832_56" x="0.608369" y="-2.19582" width="88.7833" height="90.9791" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <filter id="filter0_dii_832_56" x="0.608369" y="-2.19582" width="88.7833" height="90.9791" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
       <feOffset dy="4.39163"/>
       <feGaussianBlur stdDeviation="2.19582"/>

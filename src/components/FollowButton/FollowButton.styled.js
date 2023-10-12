@@ -10,12 +10,12 @@ export const Button = styled.button`
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px 0px rgba(0, 0, 0, 0.25);
   color: #373737;
-  font-family: Montserrat;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
-  outline: none;
+  border: none;
 `;

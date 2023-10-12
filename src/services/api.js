@@ -1,0 +1,12 @@
+import axios from 'axios';
+axios.defaults.baseURL = 'https://64a6a1ad096b3f0fcc802861.mockapi.io';
+export const getUsers = async () => {
+  const response = await axios.get('/users');
+  console.log(response.data);
+  return response.data;
+};
+export const getUserDetails = async (id) => {
+  const response = await axios.get(`/users/${id}`);
+  console.log(response.data);
+  return response.data;
+};
