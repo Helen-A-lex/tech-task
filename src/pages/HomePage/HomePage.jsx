@@ -1,10 +1,8 @@
+import { Title, Section } from './HomePage.styled';
 export default function Home() {
- 
   return (
-    <div>
-      <h1>Welcome to TWEETS</h1>
-     
-    </div>
+    <Section>
+      <Title>Welcome to</Title>
+    </Section>
   );
 }
-
