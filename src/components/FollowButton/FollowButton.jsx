@@ -23,7 +23,7 @@ const FollowButton = ({
     if (!isFollowing) {
       onFollowerCountChange(initialFollowerCount + 1, newIsFollowing);
     } else {
-      onFollowerCountChange(initialFollowerCount - 1, newIsFollowing);
+      onFollowerCountChange(initialFollowerCount, newIsFollowing);
     }
   };
 

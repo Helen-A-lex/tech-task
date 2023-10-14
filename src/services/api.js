@@ -4,8 +4,3 @@ export const getUsers = async () => {
   const response = await axios.get('/users');
   return response.data;
 };
-// export const getUserDetails = async (id) => {
-//   const response = await axios.get(`/users/${id}`);
-//   console.log(response.data);
-//   return response.data;
-// };

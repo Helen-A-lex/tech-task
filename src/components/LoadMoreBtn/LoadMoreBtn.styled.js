@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-export const GoButton = styled.button`
+export const ButtonLoadMore = styled.button`
   display: flex;
   width: 156px;
   padding: 14px 28px;
@@ -21,6 +20,7 @@ export const GoButton = styled.button`
   margin-top: 15px;
   margin-left: 15px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: #ebd8ff;

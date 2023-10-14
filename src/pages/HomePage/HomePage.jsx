@@ -1,8 +1,10 @@
-import { Title, Section } from './HomePage.styled';
+import { Title, Section, Wrap } from './HomePage.styled';
 export default function Home() {
   return (
     <Section>
-      <Title>Welcome to</Title>
+      <Wrap>
+        <Title>Welcome to</Title>
+      </Wrap>
     </Section>
   );
 }
