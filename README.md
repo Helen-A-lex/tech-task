@@ -30,7 +30,7 @@ tweets. It provides the following features:
 ## Getting Started
 
 1. Clone the repository:
-   `git clone https://github.com/Helen-A-Lex/tech-task.git`
+   `git clone https://github.com/Helen-A-lex/tech-task.git`
 2. Navigate to the project directory: `cd tech-task`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
