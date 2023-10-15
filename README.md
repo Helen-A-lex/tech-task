@@ -25,7 +25,8 @@ tweets. It provides the following features:
 - React Router: A library for handling routing in a React application.
 - JavaScript: The programming language used for the application's logic.
 - Styled Components: For styling the user interface.
-- Local Storage: For persisting user selections. -Axios
+- Local Storage: For persisting user selections.
+- API: database mockAPI.
 
 ## Getting Started
 

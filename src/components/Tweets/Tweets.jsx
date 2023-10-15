@@ -6,6 +6,7 @@ import TweetCard from '../TweetCard/TweetCard';
 import { TiArrowLeftThick } from 'react-icons/ti';
 import { GoButton } from './Tweets.styled';
 import { LoadMoreBtn } from '../LoadMoreBtn/LoadMoreBtn';
+import { Loader } from '../Loader/Loader';
 
 export default function Tweets() {
   const [isLoading, setIsLoading] = useState(false);
@@ -66,7 +67,7 @@ export default function Tweets() {
       </Link>
       <Flex>
         {isLoading ? (
-          <p>Loading...</p>
+          <Loader />
         ) : (
           users.map((user) => <TweetCard key={user.id} {...user} />)
         )}
