@@ -19,7 +19,7 @@ export default function Tweets() {
   const [endIndex, setEndIndex] = useState(0);
 
   useEffect(() => {
-    async function loadUsers() {
+    async function loadUsers(page) {
       setIsLoading(true);
       setError(null);
       setIsShownButton(false);
@@ -36,14 +36,12 @@ export default function Tweets() {
           const uniqueUsers = newVisibleUsers.filter(
             (newUser) => !prevStateUsers.some((user) => user.id === newUser.id),
           );
-          console.log(uniqueUsers);
+
           return [...prevStateUsers, ...uniqueUsers];
         });
-
+        setPage(page);
         setEndIndex(newEndIndex);
         setIsShownButton(newEndIndex < usersData.length);
-
-        console.log(page);
       } catch (error) {
         if (error.code !== 'ERR_CANCELED') {
           setError('Oops! Something went wrong! Try reloading the page!');
@@ -52,14 +50,13 @@ export default function Tweets() {
         setIsLoading(false);
       }
     }
-    loadUsers();
+    loadUsers(page);
   }, [page]);
 
-  const handleButtonLoadMore = (e) => {
-    e.preventDefault();
+  const handleButtonLoadMore = () => {
     setPage((prevStatePage) => prevStatePage + 1);
   };
-  console.log(users);
+
   return (
     <>
       <Link to={backLinkLocationRef.current}>
@@ -79,7 +76,8 @@ export default function Tweets() {
     </>
   );
 }
-// import { Flex } from '../Flex/Flex';
+
+// 2// import { Flex } from '../Flex/Flex';
 // import { useEffect, useState, useRef } from 'react';
 // import { Link, useLocation } from 'react-router-dom';
 // import { getUsers } from '../../services/api';
