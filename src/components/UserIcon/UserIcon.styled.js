@@ -10,8 +10,4 @@ export const Svg = styled.svg`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  &:hover,
-  &:focus {
-    background-color: #ebd8ff;
-  }
 `;
