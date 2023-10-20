@@ -1,9 +1,9 @@
-import{s as t,j as e}from"./index-337d3b60.js";const a="/tech-task/assets/bg-laptop-e6684906.webp";t.div`
+import{s as t,j as e}from"./index-48ef454f.js";const a="/tech-task/assets/bg-laptop-e6684906.webp";t.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 500px;
-`;const n=t.h1`
+`;const o=t.h1`
   position: absolute;
   top: 230px;
   right: 275px;
@@ -18,18 +18,7 @@ import{s as t,j as e}from"./index-337d3b60.js";const a="/tech-task/assets/bg-lap
     0 0 80px #cb7aaf;
   text-align: end;
   font-size: 85px;
-  /* padding-top: 230px;
-  padding-right: 290px; */
-`,i=t.section`
-  /* padding: 50px; */
-  /* background-image: linear-gradient(
-    135deg,
-    #e7627d 0%,
-    #b8235a 25%,
-    #801357 50%,
-    #3d1635 75%,
-    #1c1a27 100%
-  ); */
+`,n=t.section`
   height: 100%;
 
   background: linear-gradient(
@@ -40,7 +29,7 @@ import{s as t,j as e}from"./index-337d3b60.js";const a="/tech-task/assets/bg-lap
     url(${a});
   background-repeat: no-repeat;
   background-position: center center;
-`,o=t.div`
+`,i=t.div`
   position: relative;
   height: calc(100vh - 82px);
-`;function r(){return e.jsx(i,{children:e.jsx(o,{children:e.jsx(n,{children:"Welcome to"})})})}export{r as default};
+`;function s(){return e.jsx(n,{children:e.jsx(i,{children:e.jsx(o,{children:"Welcome to"})})})}export{s as default};
