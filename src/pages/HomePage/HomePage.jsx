@@ -1,4 +1,5 @@
 import { Title, Section, Wrap } from './HomePage.styled';
+// import Parralax from '../../components/Parralax/Parralax';
 export default function Home() {
   return (
     <Section>
@@ -6,5 +7,6 @@ export default function Home() {
         <Title>Welcome to</Title>
       </Wrap>
     </Section>
+    // <Parralax />
   );
 }

@@ -22,20 +22,9 @@ export const Title = styled.h1`
     0 0 80px #cb7aaf;
   text-align: end;
   font-size: 85px;
-  /* padding-top: 230px;
-  padding-right: 290px; */
 `;
 
 export const Section = styled.section`
-  /* padding: 50px; */
-  /* background-image: linear-gradient(
-    135deg,
-    #e7627d 0%,
-    #b8235a 25%,
-    #801357 50%,
-    #3d1635 75%,
-    #1c1a27 100%
-  ); */
   height: 100%;
 
   background: linear-gradient(
