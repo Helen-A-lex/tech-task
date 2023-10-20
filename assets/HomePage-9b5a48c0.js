@@ -1,4 +1,4 @@
-import{s as t,j as e}from"./index-48ef454f.js";const a="/tech-task/assets/bg-laptop-e6684906.webp";t.div`
+import{s as t,j as e}from"./index-903d98cf.js";const a="/tech-task/assets/bg-laptop-e6684906.webp";t.div`
   display: flex;
   justify-content: center;
   align-items: center;
